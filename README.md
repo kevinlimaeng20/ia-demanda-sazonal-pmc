@@ -48,6 +48,8 @@ python 09_sensibilidade_cenarios_finais.py          # sensibilidade dos cenário
 
 `saidas/previsoes.csv` já está incluído, então é possível pular a etapa 3 e rodar diretamente a partir da 4.
 
+**Verificação de reprodutibilidade:** em 10/10/2026, todas as etapas (de 1 a 9, incluindo o backtest completo) foram executadas a partir de uma cópia limpa deste pacote. As 9.324 previsões de `previsoes.csv` e todas as tabelas de resultados foram reproduzidas sem nenhuma diferença.
+
 ## O que cada saída alimenta no artigo
 
 | Artigo | Arquivo |
