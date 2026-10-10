@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+saidas/previsoes_com_combinacoes.csv
+saidas/validacao_grade_completa.csv
+saidas/resultados/paths_final_*.npy

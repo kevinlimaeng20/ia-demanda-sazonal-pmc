@@ -1,0 +1,17 @@
+modelo,referencia,melhor_5pct,pior_5pct,melhor_holm,pior_holm,recuos_variancia
+Sazonal ingênuo,Holt-Winters (ETS),0,4,0,1,0
+Holt-Winters (ETS),Sazonal ingênuo,4,0,1,0,0
+SARIMA,Sazonal ingênuo,2,0,1,0,0
+SARIMA,Holt-Winters (ETS),0,7,0,4,0
+Random Forest,Sazonal ingênuo,0,0,0,0,1
+Random Forest,Holt-Winters (ETS),0,6,0,4,1
+XGBoost,Sazonal ingênuo,0,1,0,0,0
+XGBoost,Holt-Winters (ETS),0,10,0,5,0
+LightGBM,Sazonal ingênuo,0,1,0,0,0
+LightGBM,Holt-Winters (ETS),0,8,0,3,0
+Rede Neural MLP,Sazonal ingênuo,1,0,0,0,0
+Rede Neural MLP,Holt-Winters (ETS),0,6,0,2,0
+Combinação IA,Sazonal ingênuo,0,0,0,0,0
+Combinação IA,Holt-Winters (ETS),0,6,0,2,0
+Combinação geral,Sazonal ingênuo,2,0,0,0,0
+Combinação geral,Holt-Winters (ETS),0,5,0,2,0

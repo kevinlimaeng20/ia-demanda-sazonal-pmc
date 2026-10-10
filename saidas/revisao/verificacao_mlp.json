@@ -1,0 +1,65 @@
+{
+ "verificacao_aprovada": true,
+ "origens_testadas": [
+  {
+   "origem": "2022-07-01",
+   "ultima_data_de_treino": "2022-07-01",
+   "linhas_de_treino_X": 247,
+   "ajustes_do_padronizador": 1,
+   "linhas_no_ajuste": 247,
+   "media_igual_a_media_do_treino": true,
+   "transformacoes": 13,
+   "transformacoes_de_previsao_1_linha": 12,
+   "mesmo_objeto_em_todas": true,
+   "sementes_das_redes": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "origem": "2024-07-01",
+   "ultima_data_de_treino": "2024-07-01",
+   "linhas_de_treino_X": 271,
+   "ajustes_do_padronizador": 1,
+   "linhas_no_ajuste": 271,
+   "media_igual_a_media_do_treino": true,
+   "transformacoes": 13,
+   "transformacoes_de_previsao_1_linha": 12,
+   "mesmo_objeto_em_todas": true,
+   "sementes_das_redes": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "origem": "2026-06-01",
+   "ultima_data_de_treino": "2026-06-01",
+   "linhas_de_treino_X": 294,
+   "ajustes_do_padronizador": 1,
+   "linhas_no_ajuste": 294,
+   "media_igual_a_media_do_treino": true,
+   "transformacoes": 13,
+   "transformacoes_de_previsao_1_linha": 12,
+   "mesmo_objeto_em_todas": true,
+   "sementes_das_redes": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ]
+  }
+ ],
+ "sementes_outros_modelos": {
+  "Random Forest": 42,
+  "XGBoost": 42,
+  "LightGBM": 42,
+  "simulacao_monte_carlo (numpy default_rng)": 2026
+ }
+}

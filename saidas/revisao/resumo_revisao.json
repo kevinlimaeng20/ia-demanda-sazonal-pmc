@@ -1,0 +1,235 @@
+{
+ "dm_mlp_ets": [
+  {
+   "h": 1,
+   "n": 48,
+   "mape_a": 3.7608,
+   "mape_b": 2.8388,
+   "dif": 0.9219,
+   "estat": 2.1254,
+   "p": 0.0388,
+   "recuo_variancia": false,
+   "p_holm": 0.2719,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 2,
+   "n": 47,
+   "mape_a": 4.2993,
+   "mape_b": 2.9324,
+   "dif": 1.3669,
+   "estat": 3.0045,
+   "p": 0.0043,
+   "recuo_variancia": false,
+   "p_holm": 0.0472,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 3,
+   "n": 46,
+   "mape_a": 4.9673,
+   "mape_b": 3.1539,
+   "dif": 1.8134,
+   "estat": 2.9507,
+   "p": 0.005,
+   "recuo_variancia": false,
+   "p_holm": 0.0502,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 4,
+   "n": 45,
+   "mape_a": 4.4896,
+   "mape_b": 3.184,
+   "dif": 1.3056,
+   "estat": 2.6638,
+   "p": 0.0108,
+   "recuo_variancia": false,
+   "p_holm": 0.0861,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 5,
+   "n": 44,
+   "mape_a": 4.0521,
+   "mape_b": 3.0037,
+   "dif": 1.0485,
+   "estat": 3.4736,
+   "p": 0.0012,
+   "recuo_variancia": false,
+   "p_holm": 0.0142,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 6,
+   "n": 43,
+   "mape_a": 3.8783,
+   "mape_b": 2.8684,
+   "dif": 1.0099,
+   "estat": 2.8391,
+   "p": 0.0069,
+   "recuo_variancia": false,
+   "p_holm": 0.0625,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 7,
+   "n": 42,
+   "mape_a": 4.0012,
+   "mape_b": 2.9768,
+   "dif": 1.0245,
+   "estat": 1.108,
+   "p": 0.2743,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 8,
+   "n": 41,
+   "mape_a": 3.9475,
+   "mape_b": 3.2863,
+   "dif": 0.6612,
+   "estat": 0.6407,
+   "p": 0.5254,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 9,
+   "n": 40,
+   "mape_a": 3.658,
+   "mape_b": 2.9878,
+   "dif": 0.6702,
+   "estat": 0.685,
+   "p": 0.4974,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 10,
+   "n": 39,
+   "mape_a": 3.9652,
+   "mape_b": 3.2451,
+   "dif": 0.7201,
+   "estat": 0.8123,
+   "p": 0.4217,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 11,
+   "n": 38,
+   "mape_a": 3.487,
+   "mape_b": 3.2412,
+   "dif": 0.2458,
+   "estat": 0.4145,
+   "p": 0.6809,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  },
+  {
+   "h": 12,
+   "n": 37,
+   "mape_a": 3.7294,
+   "mape_b": 3.5192,
+   "dif": 0.2102,
+   "estat": 0.3316,
+   "p": 0.7421,
+   "recuo_variancia": false,
+   "p_holm": 1.0,
+   "comparacao": "MLP x ETS (teste)"
+  }
+ ],
+ "dm_recuos_variancia_total": 2,
+ "comum_mape_ets_h": [
+  2.64,
+  2.52,
+  2.71,
+  2.85,
+  2.91,
+  2.83,
+  2.86,
+  3.22,
+  2.92,
+  3.13,
+  3.26,
+  3.52
+ ],
+ "comum_mape_mlp_h": [
+  3.18,
+  3.34,
+  3.82,
+  3.84,
+  3.99,
+  3.69,
+  3.31,
+  3.21,
+  2.91,
+  3.42,
+  3.36,
+  3.73
+ ],
+ "comum_media_h1_6": {
+  "Holt-Winters (ETS)": 2.74,
+  "Rede Neural MLP": 3.64,
+  "SARIMA": 3.07,
+  "Sazonal ingênuo": 3.45
+ },
+ "comum_media_h7_12": {
+  "Holt-Winters (ETS)": 3.15,
+  "Rede Neural MLP": 3.32,
+  "SARIMA": 3.99,
+  "Sazonal ingênuo": 3.45
+ },
+ "total_media_h7_12": {
+  "Holt-Winters (ETS)": 3.21,
+  "Rede Neural MLP": 3.8,
+  "SARIMA": 4.01,
+  "Sazonal ingênuo": 4.0
+ },
+ "defasagens_observadas": {
+  "2": 54,
+  "3": 1
+ },
+ "rt_n_previsoes": 461,
+ "rt_descartadas_nowcast": 49,
+ "rt_mape_global": {
+  "Sazonal ingênuo": 4.44,
+  "Holt-Winters (ETS)": 3.12,
+  "SARIMA": 3.73,
+  "Random Forest": 4.91,
+  "XGBoost": 5.52,
+  "LightGBM": 5.58,
+  "Rede Neural MLP": 4.07,
+  "Combinação IA": 4.51,
+  "Combinação geral": 3.83
+ },
+ "dez_teste": {
+  "n_eventos": 4,
+  "mlp_vence": 3,
+  "p_binomial_bilateral": 0.625
+ },
+ "dez_validacao": {
+  "n_eventos": 6,
+  "mlp_vence": 2,
+  "p_binomial_bilateral": 0.6875
+ },
+ "dez_todos": {
+  "n_eventos": 10,
+  "mlp_vence": 5,
+  "p_binomial_bilateral": 1.0
+ },
+ "dez_mape_validacao": {
+  "Holt-Winters (ETS)": 4.82,
+  "Rede Neural MLP": 7.7
+ },
+ "dez_mape_teste": {
+  "Holt-Winters (ETS)": 4.0,
+  "Rede Neural MLP": 2.35
+ }
+}
