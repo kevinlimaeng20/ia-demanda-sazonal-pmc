@@ -217,7 +217,11 @@ def agrega(s):
                           larg80=s.larg80.mean(), crps=s.crps.mean()))
 
 
-base = {m: simula(m, "base") for m in (ETS, MLP)}
+# o conjunto completo ("base") é exatamente a simulação da Tabela 4, gravada por 04_avaliacao.py,
+# para que coberturas e CRPS deste script coincidam com os do artigo
+_det = pd.read_csv("../saidas/resultados/simulacao_teste_detalhe.csv", parse_dates=["origem", "data_alvo"])
+_det = _det.rename(columns={"larg80_pct": "larg80"})
+base = {m: _det[_det.modelo == m].assign(variante="base").reset_index(drop=True) for m in (ETS, MLP)}
 por_h = pd.concat({m: base[m].groupby("h").apply(agrega) for m in base}, axis=1)
 por_mes = pd.concat({m: base[m].groupby(base[m].data_alvo.dt.month).apply(agrega) for m in base}, axis=1)
 por_h.to_csv(f"{OUT}/simulacao_por_horizonte.csv")
@@ -233,7 +237,8 @@ for m in (ETS, MLP):
         r["pool_min"], r["pool_max"] = s.tam_pool.min(), s.tam_pool.max()
         sens.append(r)
     for var in ("base", "so_teste"):
-        s = simula(m, var, origens=set(origens_so_teste))
+        s = base[m][base[m].origem.isin(origens_so_teste)] if var == "base" else \
+            simula(m, var, origens=set(origens_so_teste))
         r = agrega(s); r["variante"], r["modelo"], r["recorte"] = var, m, "origens a partir de " + str(origens_so_teste[0].date())
         r["pool_min"], r["pool_max"] = s.tam_pool.min(), s.tam_pool.max()
         sens.append(r)
